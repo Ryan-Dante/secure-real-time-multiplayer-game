@@ -1,16 +1,16 @@
 class Collectible {
-  constructor({x, y, value, id}) {
-
+  constructor(id, value, x, y) {
+    this.id = id;
+    this.value = value;
+    this.x = x;
+    this.y = y;
+    this.height = 20;
+    this.width = 20;
   }
-
 }
 
-/*
-  Note: Attempt to export this for use
-  in server.js
-*/
 try {
   module.exports = Collectible;
-} catch(e) {}
+} catch (e) { }
 
 export default Collectible;

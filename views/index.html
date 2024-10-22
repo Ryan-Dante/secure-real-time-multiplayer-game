@@ -4,7 +4,7 @@
     <title>Secure Real-Time Multiplayer Game</title>
     <meta
       name="description"
-      content="An example for the fCC InfoSec Secure Real-Time Multiplayer Game project"
+      content="fCC InfoSec Secure Real-Time Multiplayer Game project"
     />
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,19 +13,23 @@
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
     <script src="/socket.io/socket.io.js"></script>
   </head>
-  <body>
+  <body style="background-color: #1a1a1a;">
     <header>
-      <h1>Secure Real Time Multiplayer Game</h1>
+      <h1 style="text-align: center; color: white;">Secure Real Time Multiplayer Game</h1>
     </header>
     <hr style="margin: 25px" />
     <div class="container">
       <canvas 
         ref="game"
         id="game-window" 
-        width="640" 
-        height="480"
+        width="800" 
+        height="600"
+        style="border: 1px solid black; background-color: #f4e1d2;"
       >
       </canvas>
+    </div>
+    <div>
+      <p id="connection-info" style="color: white; text-align: center;"></p>
     </div>
   </body>
   <script src="../public/game.mjs" type="module"></script>
